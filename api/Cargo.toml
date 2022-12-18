@@ -1,10 +1,18 @@
 [package]
 name = "index"
 version = "1.0.0"
-authors = ["Your Name <your@site.com>"]
+authors = [ "Your Name <your@site.com>" ]
 edition = "2018"
 
 [dependencies]
 http = "0.1"
 vercel_lambda = "*"
+serde_json = "1.0.90"
 
+  [dependencies.serde]
+  version = "1.0"
+  features = [ "derive" ]
+
+[[bin]]
+name = "index"
+path = "E:\\code\\rust\\rustapi\\api\\index.rs"
